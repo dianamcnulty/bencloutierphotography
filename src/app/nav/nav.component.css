@@ -1,0 +1,31 @@
+button {
+  margin: 10px;
+  cursor:pointer;
+  display:inline-block;
+  font-size: 15px;
+}
+button, .navlink {
+  background: -webkit-linear-gradient(top, #e9d362 0%,#333 92%);
+  cursor: pointer;
+  border: 2px ridge #444  ;
+  line-height: 1;
+  text-align: center;
+  outline: 0;
+  padding: 10px;
+}
+nav {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.navlink {
+  display: inline-block;
+  margin: 3px auto;
+  width: 150px;
+}
+.navlink:hover,
+button:hover {
+  color: white;
+}
