@@ -1,0 +1,14 @@
+.face {
+  background-image: url('https://www.reshiftmedia.com/wp-content/uploads/2013/07/facebook-logo-500x227.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 35px;
+}
+p {
+  font-size: 22px;
+}
+div{
+  padding-left: 75px;
+  padding-bottom: 75px;
+}

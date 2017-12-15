@@ -1,5 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
 body {
   background-color: black;
   color: white;
+  font-family: sans-serif;
+}
+.intro {
+  padding: 17px 50px 0 33px;
+  font-size: 30px;
+}
+button, .navlink {
+  background: -webkit-linear-gradient(top, #e9d362 0%,#333 92%);
+  cursor: pointer;
+  border: 2px ridge #444  ;
+  line-height: 1;
+  text-align: center;
+  outline: 0;
+  padding: 10px;
+}
+h1 {
+font-family: 'Rock Salt', sans-serif;
+font-weight: 400;
+font-size: 35px;
+}
+h3 {
+font-family: 'Rock Salt', sans-serif;
+font-weight: 200;
+padding-left: 50px;
 }

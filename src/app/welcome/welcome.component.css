@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   background-image: url('https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/14633094_647946008719682_4901830569372832746_n.jpg?oh=f061a4e4050a9f923eff9a2c5ae6f5b0&oe=5AD464FB');
-  min-height: 490px;
+  height: 460px;
   max-width: 1000px;
   margin: auto;
   background-repeat: no-repeat;
@@ -12,14 +12,12 @@
   background-position: right center;
 }
 .description {
-  font-size: 22px;
   position: absolute;
   margin-bottom: 0;
   bottom: 12px;
-  right: 50px;
-
+  right: 33px;
 }
 .intro {
-  padding: 17px 50px 0 50px;
+  padding: 17px 50px 0 33px;
   font-size: 30px;
 }
