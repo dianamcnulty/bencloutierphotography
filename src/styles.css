@@ -1,17 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
-
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
 body {
   background-color: black;
   color: white;
   font-family: sans-serif;
+}
+html {
+  font-family: "Trebuchet MS", helvetica, arial;
 }
 .intro {
   padding: 17px 50px 0 33px;
   font-size: 30px;
 }
 button, .navlink {
-  background: -webkit-linear-gradient(top, #e9d362 0%,#333 92%);
+  background: -webkit-linear-gradient(top, #decba4, #3E5151);
   cursor: pointer;
   border: 2px ridge #444  ;
   line-height: 1;
@@ -20,9 +23,10 @@ button, .navlink {
   padding: 10px;
 }
 h1 {
-font-family: 'Rock Salt', sans-serif;
-font-weight: 400;
+font-family: 'Sedgwick Ave Display', sans-serif;
+font-weight: 200;
 font-size: 35px;
+color: #a58c56;
 }
 h3 {
 font-family: 'Rock Salt', sans-serif;
