@@ -4,7 +4,7 @@ button {
   display:inline-block;
   font-size: 15px;
 }
-button, .navlink {
+/*button, .navlink {
   background: -webkit-linear-gradient(top, #e9d362 0%,#333 92%);
   cursor: pointer;
   border: 2px ridge #444  ;
@@ -12,7 +12,7 @@ button, .navlink {
   text-align: center;
   outline: 0;
   padding: 10px;
-}
+}*/
 nav {
   display: -webkit-flex;
   display: flex;

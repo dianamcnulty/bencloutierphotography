@@ -2,8 +2,10 @@
   position: relative;
   top: 0;
   left: 0;
-  background-image: url('https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/14633094_647946008719682_4901830569372832746_n.jpg?oh=f061a4e4050a9f923eff9a2c5ae6f5b0&oe=5AD464FB');
-  height: 460px;
+  /*background-image: url('https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/14633094_647946008719682_4901830569372832746_n.jpg?oh=f061a4e4050a9f923eff9a2c5ae6f5b0&oe=5AD464FB');*/
+background-image: url('../../assets/images/bensleaf.jpg');
+
+  height: 420px;
   max-width: 1000px;
   margin: auto;
   background-repeat: no-repeat;

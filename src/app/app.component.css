@@ -12,6 +12,7 @@ footer {
   cursor: pointer;
 }
 .header-img{
-  max-width: 90%;
+  width: 90%;
+  max-width: 800px;
   margin: 0 5% 0 5%;
 }
