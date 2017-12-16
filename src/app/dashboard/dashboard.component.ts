@@ -14,10 +14,18 @@ import { environment } from '../../environments/environment';
 })
 export class DashboardComponent implements OnInit {
   photo= <any>{};
-
+  images= <any>[];
   constructor(private auth: AuthService, private http: Http) { }
 
   ngOnInit() {
+    this.http.get(environment.apiServer + '/photos')
+      .subscribe(
+        response => {
+          this.images = response.json().photos;
+          console.log('images is', this.images);
+        },
+        err => console.log(err)
+      )
   }
   addPhoto() {
     // Create the credentials object.
