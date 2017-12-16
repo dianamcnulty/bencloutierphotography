@@ -1,0 +1,19 @@
+<div *ngIf="auth.user">
+<h3> Add Photos </h3>
+  <legend>Category
+    <select [(ngModel)]="photo.category">
+      <option value='People'>People</option>
+      <option value='Nature'>Nature</option>
+      <option value='Architecture'>Architecture</option>
+      <option value='Objects'>Objects</option>
+      <option value='Other'>Other</option>
+    </select></legend>
+  <legend>Link to Photo<input [(ngModel)]="photo.url" type='text' placeholder='copy the url for your photo and paste it here' required=true></legend>
+<legend>Caption<input [(ngModel)]="photo.caption" placeholder='say something about your photo'></legend>
+<input class='button' (click)="addPhoto()" type='submit' value='submit'>
+</div>
+
+<div *ngIf="!auth.user">
+  <h3>This page is only available to the Site Owner.</h3>
+    <p>If you are the site owner, please log in to see this page.</p>
+  </div>
