@@ -27,6 +27,19 @@ export class DashboardComponent implements OnInit {
         err => console.log(err)
       )
   }
+  deletePhoto(id) {
+    let config = {}
+
+    // Set the headers key
+    config['headers'] = { Authorization:'Token token=' + this.auth.getUserToken()}
+    this.http.delete(environment.apiServer + '/photos/' + id, config)
+    .subscribe(
+      response => {
+        this.ngOnInit()
+      },
+      err => console.log(err)
+    )
+  }
   addPhoto() {
     // Create the credentials object.
     const newPhoto = {
