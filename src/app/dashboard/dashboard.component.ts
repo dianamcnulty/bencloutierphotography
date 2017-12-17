@@ -61,6 +61,7 @@ export class DashboardComponent implements OnInit {
         response => {
           this.success = true
           console.log(response)
+          this.ngOnInit();
         },
         err => console.log(err)
       )
