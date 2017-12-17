@@ -12,9 +12,9 @@
 <legend>Caption<input [(ngModel)]="photo.caption" placeholder='say something about your photo'></legend>
 <input class='button' (click)="addPhoto()" type='submit' value='submit'>
 <div class='photo-grid'>
-<div *ngFor="let image of images" class='edit-container'>
-    <img class='thumbnail' src={{image.url}}><br>
-    <a class='edit-link'>edit</a><a class='delete-link' (click)="deletePhoto(image.id)" data-id={{image.id}}>delete</a>
+  <div *ngFor="let image of images" class='edit-container'>
+      <img class='thumbnail' src={{image.url}}><br>
+      <a class='edit-link'>edit</a><a class='delete-link' (click)="deletePhoto(image.id)" data-id={{image.id}}>delete</a>
   </div>
 </div>
 </div>
