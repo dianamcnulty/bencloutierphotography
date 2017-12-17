@@ -18,7 +18,7 @@ export class NatureComponent implements OnInit {
         response => {
           const photoList = response.json().photos;
           photoList.forEach(photo => {
-            if (photo.category = 'Nature') {
+            if (photo.category == 'Nature') {
               this.images.push(photo)
             }
           })
@@ -35,7 +35,9 @@ export class NatureComponent implements OnInit {
       if(image.id === id) {
         console.log('found it!', image.id)
         document.getElementById('feature').setAttribute('src', image.url);
-        document.getElementById('caption').innerHTML = image.caption;
+        if (image.caption) {
+          document.getElementById('caption').innerHTML = image.caption;
+        }
       }
     })
   }

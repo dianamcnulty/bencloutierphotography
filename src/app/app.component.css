@@ -7,6 +7,10 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px black solid;
+  color:#3E5151;
+}
+a {
+  color:#3E5151;
 }
 .header {
   cursor: pointer;

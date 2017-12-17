@@ -1,3 +1,10 @@
-<p>
-  architecture works!
-</p>
+<div class='thumb-container'>
+    <img  *ngFor="let image of images" class='thumbnail' id={{image.id}} (click)=expandPhoto(image.id) src={{image.url}}><br>
+</div>
+<br>
+<div class='feature-container'>
+  <div class='feature-box'>
+    <img class='feature' id='feature' src={{images[0].url}}>
+    <p id='caption'>{{images[0].caption}}</p>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.thumbnail {
+  width:100px;
+  cursor: pointer;
+}
+.thumb-container {
+  width: 100px;
+  /*height: 450px;*/
+  display: inline-block;
+  float: left;
+  /*overflow-y: scroll;*/
+  margin: 20px;
+}
+.feature-container {
+  margin-left: 100px;
+  text-align: center;
+}
+.feature-box {
+  width: 75%;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  display: inline-block;
+}
+.feature {
+  max-width: 100%;
+}
