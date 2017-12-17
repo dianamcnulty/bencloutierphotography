@@ -1,0 +1,26 @@
+.login {
+  min-height: 350px;
+}
+.dashboard {
+  display: inline-block;
+  margin: auto;
+  width: 40%;
+  font-size: 25px;
+}
+.button-container {
+  text-align: center;
+  padding-top: 25px;
+}
+.logout {
+  min-height: 200px;
+  text-align: center;
+}
+.indent {
+  margin-left: 70px;
+}
+input {
+  height: 20px;
+}
+.button {
+  height: 35px;
+}

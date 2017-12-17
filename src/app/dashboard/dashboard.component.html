@@ -1,4 +1,8 @@
 <div *ngIf="auth.user">
+  <div *ngIf="auth.user" class='logout'>
+    <!-- <h3>Log Out</h3> -->
+    <input class='button' (click)="signOut()" type="submit" value="Sign Out"/>
+  </div>
 <h3> Add Photos </h3>
   <legend>Category
     <select [(ngModel)]="photo.category">
@@ -11,15 +15,19 @@
   <legend>Link to Photo<input [(ngModel)]="photo.url" type='text' placeholder='copy the url for your photo and paste it here' required=true></legend>
 <legend>Caption<input [(ngModel)]="photo.caption" placeholder='say something about your photo'></legend>
 <input class='button' (click)="addPhoto()" type='submit' value='submit'>
+<br><hr><br>
+<h3>These photos are already on your site:</h3>
 <div class='photo-grid'>
   <div *ngFor="let image of images" class='edit-container'>
-      <img class='thumbnail' src={{image.url}}><br>
-      <a class='edit-link'>edit</a><a class='delete-link' (click)="deletePhoto(image.id)" data-id={{image.id}}>delete</a>
+      <img class='preview' src={{image.url}}><br>
+      <!-- <a class='edit-link'>edit</a> -->
+      <a class='delete-link' (click)="deletePhoto(image.id)" data-id={{image.id}}>delete</a>
   </div>
 </div>
 </div>
 
-<div *ngIf="!auth.user">
+<div *ngIf="!auth.user" class='sizing'>
   <h3>This page is only available to the Site Owner.</h3>
     <p>If you are the site owner, please log in to see this page.</p>
-  </div>
+</div>
+<br><br>

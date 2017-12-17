@@ -1,19 +1,19 @@
-<div *ngIf="auth.user" class="container">Successfully logged in as "{{auth.user.email}}"</div>
-<button *ngIf="auth.user" class='dashboard' routerLink="/dashboard"><h3>Take me to my photo dashboard</h3></button>
-<div *ngIf="!auth.user" class="container">
+<div class='button-container' *ngIf="auth.user"><button *ngIf="auth.user" class='dashboard' routerLink="/dashboard">Take me to my Photo Dashboard</button><br><br></div>
+
+<div *ngIf="!auth.user" class="login">
   <h3>Sign In</h3>
-  <input [(ngModel)]="user.email" type="text" placeholder="Email"/>
-  <input [(ngModel)]="user.password" type="text" placeholder="Password"/>
+  <input class='indent'[(ngModel)]="user.email" type="text" placeholder="Email"/>
+  <input [(ngModel)]="user.password" type="password" placeholder="Password"/>
   <input class='button' (click)="signIn()" type="submit" value="Log in"/>
 </div>
 
-<div *ngIf="auth.user" class="container">
+<!-- <div *ngIf="auth.user" class='password'>
   <h3>Change Password</h3>
-  <input [(ngModel)]="oldPassword" type="text" placeholder="Old"/>
-  <input [(ngModel)]="newPassword" type="text" placeholder="New"/>
+  <input class='indent' [(ngModel)]="oldPassword" type="password" placeholder="Old"/>
+  <input [(ngModel)]="newPassword" type="password" placeholder="New"/>
   <input class='button' (click)="changePassword()" type="submit" value="Change"/>
-</div>
-<div *ngIf="auth.user" class="container">
-  <h3>Log Out</h3>
+</div> -->
+<div *ngIf="auth.user" class='logout'>
+  <!-- <h3>Log Out</h3> -->
   <input class='button' (click)="signOut()" type="submit" value="Sign Out"/>
 </div>

@@ -66,4 +66,7 @@ export class DashboardComponent implements OnInit {
         err => console.log(err)
       )
   }
+  signOut() {
+    this.auth.signOut();
+  }
 }

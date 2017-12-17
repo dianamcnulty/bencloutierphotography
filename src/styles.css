@@ -1,14 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
-@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+@import url('https://fonts.googleapis.com/css?family=Economica');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase');
+
+
 body {
   background-color: black;
   color: #eae8de;
-  font-family: sans-serif;
+  font-family: 'Economica', sans-serif;
+  font-size: 20px;
 }
-html {
+/*html {
   font-family: "Trebuchet MS", helvetica, arial;
-}
+}*/
 .intro {
   padding: 17px 50px 0 33px;
   font-size: 30px;
@@ -21,17 +25,23 @@ button, .navlink, .button {
   text-align: center;
   outline: 0;
   padding: 10px;
+  font-family: 'Cormorant Unicase', serif;
 }
 h1 {
-font-family: 'Sedgwick Ave Display', sans-serif;
+font-family: 'Rock Salt', sans-serif;
 font-weight: 200;
 font-size: 35px;
 color: #a58c56;
 }
 h3 {
-font-family: 'Rock Salt', sans-serif;
-font-weight: 200;
+/*font-family: 'Rock Salt', sans-serif;*/
+font-family: 'Cormorant Unicase', serif;
+font-size: 25px;
+/*font-weight: 200;*/
 padding-left: 50px;
+}
+hr {
+  border:#3E5151 solid 1px;
 }
 a {
   color:#aac1b4;
