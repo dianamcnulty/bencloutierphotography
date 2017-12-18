@@ -52,6 +52,7 @@ export class AuthService {
         response => {
           // Send the existing credentials back to the server to log in the new user
           this.signIn(credentials.credentials.email, credentials.credentials.password)
+          console.log('admin is signed up')
         },
         err => console.log(err)
       )
