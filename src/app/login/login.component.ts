@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
 
   ngOnInit() {
-    this.auth.signUp('admin', 'Dragon', 'Dragon')
+    // this.auth.signUp('admin', 'Dragon', 'Dragon')
   }
 
   signOut() {
