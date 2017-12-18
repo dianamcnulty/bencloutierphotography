@@ -59,7 +59,6 @@ export class DashboardComponent implements OnInit {
     this.http.post(environment.apiServer + '/photos', newPhoto, config)
       .subscribe(
         response => {
-          this.success = true
           console.log(response)
           this.ngOnInit();
         },
