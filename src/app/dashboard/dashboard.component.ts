@@ -15,7 +15,7 @@ import { environment } from '../../environments/environment';
 export class DashboardComponent implements OnInit {
   photo= <any>{};
   images= <any>[];
-  constructor(private auth: AuthService, private http: Http) { }
+  constructor(public auth: AuthService, private http: Http) { }
 
   ngOnInit() {
     this.http.get(environment.apiServer + '/photos')
