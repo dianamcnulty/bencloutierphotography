@@ -80,3 +80,32 @@ a {
 .feature {
   max-width: 100%;
 }
+@media screen and (max-width: 500px) {
+  .thumb-container {
+    width: 90%;
+    white-space: nowrap;
+    height: 50px;
+    float: left;
+    overflow-x: scroll;
+    margin: 20px;
+  }
+  .thumbnail {
+    height:50px;
+  }
+  .thumbnail:hover {
+    border: 1px solid gray;
+    width: 50px;
+  }
+  .thumbnail {
+    box-sizing: border-box;
+    width:50px;
+    cursor: pointer;
+  }
+  .feature-box {
+    padding: 0;
+  }
+  .feature-container {
+    margin-left: 0px;
+    text-align: center;
+  }
+}

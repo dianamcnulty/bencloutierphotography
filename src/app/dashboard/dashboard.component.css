@@ -21,3 +21,12 @@
 .logout {
   float: right;
 }
+input {
+  margin: 5px 10px;
+}
+.form-container {
+  margin: 50px;
+}
+p {
+  margin-left: 50px;
+}

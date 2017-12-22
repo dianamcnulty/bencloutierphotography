@@ -4,7 +4,8 @@
     <input class='button' (click)="signOut()" type="submit" value="Sign Out"/>
   </div>
 <h3> Add Photos </h3>
-  <legend>Category
+<div class='form-container'>
+  <legend>Category:
     <select [(ngModel)]="photo.category">
       <option value='People'>People</option>
       <option value='Nature'>Nature</option>
@@ -12,9 +13,10 @@
       <option value='Objects'>Objects</option>
       <option value='Other'>Other</option>
     </select></legend>
-  <legend>Link to Photo<input [(ngModel)]="photo.url" type='text' placeholder='copy the url for your photo and paste it here' required=true></legend>
-<legend>Caption<input [(ngModel)]="photo.caption" placeholder='say something about your photo'></legend>
-<input class='button' (click)="addPhoto()" type='submit' value='submit'>
+  <legend>Link to Photo: <input [(ngModel)]="photo.url" type='text' placeholder='copy the url for your photo and paste it here' required=true></legend>
+  <legend>Caption: <input [(ngModel)]="photo.caption" placeholder='say something about your photo'></legend>
+  <input class='button' (click)="addPhoto()" type='submit' value='submit'>
+</div>
 <br><hr><br>
 <h3>These photos are already on your site:</h3>
 <div class='photo-grid'>
