@@ -49,13 +49,9 @@ a {
 .feature-container {
   min-height: 420px;
 }
-.thumbnail:hover {
-  border: 1px solid gray;
-  width: 130px;
-}
+
 .thumbnail {
   box-sizing: border-box;
-  width:100px;
   cursor: pointer;
 }
 .thumb-container {
@@ -80,6 +76,15 @@ a {
 .feature {
   max-width: 100%;
 }
+@media screen and (min-width: 500px) {
+  .thumbnail:hover {
+    border: 1px solid gray;
+    width: 130px;
+  }
+  .thumbnail {
+    width:100px;
+  }
+}
 @media screen and (max-width: 500px) {
   .thumb-container {
     width: 90%;
@@ -89,17 +94,11 @@ a {
     overflow-x: scroll;
     margin: 20px;
   }
-  .thumbnail {
-    height:50px;
-  }
   .thumbnail:hover {
     border: 1px solid gray;
-    width: 50px;
   }
   .thumbnail {
-    box-sizing: border-box;
-    width:50px;
-    cursor: pointer;
+    height:100%;
   }
   .feature-box {
     padding: 0;
