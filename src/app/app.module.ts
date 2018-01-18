@@ -22,6 +22,7 @@ import { PeopleComponent } from './people/people.component';
 import { ArchitectureComponent } from './architecture/architecture.component';
 import { ObjectPhotosComponent } from './object-photos/object-photos.component';
 import { OtherComponent } from './other/other.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { OtherComponent } from './other/other.component';
     PeopleComponent,
     ArchitectureComponent,
     ObjectPhotosComponent,
-    OtherComponent
+    OtherComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

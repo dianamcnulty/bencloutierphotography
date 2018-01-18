@@ -25,6 +25,16 @@
       <!-- <a class='edit-link'>edit</a> -->
       <a class='delete-link' (click)="deletePhoto(image.id)" data-id={{image.id}}>delete</a>
   </div>
+  <app-pagination
+  [count]='images.length()'
+  [page]="1"
+  [perPage]="15"
+  [pagesToShow]="10"
+  [loading]="!images"
+  (onPrev)="prevPage()"
+  (onNext)="nextPage()"
+  (onPage)="goToPage($event)">
+</app-pagination>
 </div>
 </div>
 
