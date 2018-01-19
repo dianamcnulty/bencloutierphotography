@@ -76,6 +76,10 @@ a {
 .feature {
   max-width: 100%;
 }
+button:disabled {
+  color:#4e5259;
+  background: #6b6963;
+}
 @media screen and (min-width: 500px) {
   .thumbnail:hover {
     border: 1px solid gray;

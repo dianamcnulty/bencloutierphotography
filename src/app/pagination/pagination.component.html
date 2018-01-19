@@ -1,7 +1,15 @@
-<div class="pagination" *ngIf="count > 0">
-  <span>Showing images{{ getMin() }} through {{ getMax() }} of {{ count }},</span>
+<div class="pagination">
+  <br>
+  <div class='buttons'>
+  <button class='arrow-button' (click)="onPrev()" [disabled]="page === 1 || loading" [ngClass]="{ 'disabled': page === 1 || loading }"><</button>
+  <button class='pagenum' *ngFor="let pageNum of getPages()"
+			(click)="onPage(pageNum)"
+      [disabled]="(pageNum === page) || loading"
+			[ngClass]="{'disabled': pageNum === page || loading}">{{pageNum}}</button>
+  <button class='arrow-button' (click)="onNext(true)" [disabled]="lastPage() || loading" [ngClass]="{ 'disabled': lastPage() || loading }">></button>
+  </div>
+  <div class="description">
+  <span>Showing {{ getMin() }} - {{ getMax() }} of {{ count }} photos,</span>
   <span>{{ totalPages() }} pages</span>
-  <button (click)="onPrev()" [disabled]="page === 1 || loading"><</button>
-  <button class='pagenum' *ngFor="let pageNum of getPages()" (click)="onPage(pageNum)">{{pageNum}}</button>
-  <button (click)="onNext()" [disabled]="lastPage() || loading">></button>
+  </div>
 </div>

@@ -15,14 +15,23 @@ import { environment } from '../../environments/environment';
 export class DashboardComponent implements OnInit {
   photo= <any>{};
   images= <any>[];
+  allImages= <any>[];
+  loading = false;
+  total = 0;
+  page = 1;
+  limit = 10;
   constructor(public auth: AuthService, private http: Http) { }
 
   ngOnInit() {
     this.http.get(environment.apiServer + '/photos')
       .subscribe(
         response => {
-          this.images = response.json().photos;
+          this.allImages = response.json().photos;
+          this.images = this.allImages.slice(0, (this.limit))
+          this.total = this.allImages.length;
+          this.loading = false;
           console.log('images is', this.images);
+          console.log('allImages is', this.allImages);
         },
         err => console.log(err)
       )
@@ -68,4 +77,30 @@ export class DashboardComponent implements OnInit {
   signOut() {
     this.auth.signOut();
   }
+  updateImages() {
+    const start = 0
+    if (this.page > 1) {
+      start = (this.page - 1) * this.limit;
+    }
+    const end = this.page * (this.limit);
+    if (end > this.allImages.length){
+      end = this.allImages.length;
+    }
+    this.images = this.allImages.slice(start, end);
+  }
+  goToPage(pageNum: number): void {
+    this.page = pageNum;
+    this.updateImages();
+  }
+
+  onNext(): void {
+    this.page++;
+    this.updateImages();
+  }
+
+  onPrev(): void {
+    this.page--;
+    this.updateImages();
+  }
+
 }

@@ -26,14 +26,14 @@
       <a class='delete-link' (click)="deletePhoto(image.id)" data-id={{image.id}}>delete</a>
   </div>
   <app-pagination
-  [count]='images.length'
-  [page]="1"
-  [perPage]="5"
+  [count]="total"
+  [page]="page"
+  [perPage]="limit"
   [pagesToShow]="10"
   [loading]="!images"
-  (onPrev)="prevPage()"
-  (onNext)="nextPage()"
-  (onPage)="goToPage($event)">
+  (goNext)="onNext()"
+  (goPrev)="onPrev()"
+  (goPage)="goToPage($event)">
 </app-pagination>
 </div>
 </div>

@@ -30,3 +30,9 @@ input {
 p {
   margin-left: 50px;
 }
+.photo-grid {
+  text-align: center;
+  max-width: 510px;
+  margin: auto;
+
+}
