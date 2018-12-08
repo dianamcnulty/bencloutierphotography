@@ -78,11 +78,11 @@ export class DashboardComponent implements OnInit {
     this.auth.signOut();
   }
   updateImages() {
-    const start = 0
+    let start = 0
     if (this.page > 1) {
       start = (this.page - 1) * this.limit;
     }
-    const end = this.page * (this.limit);
+    let end = this.page * (this.limit);
     if (end > this.allImages.length){
       end = this.allImages.length;
     }
